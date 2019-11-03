@@ -1,0 +1,109 @@
+body {
+    padding-top: 56px;
+}
+
+.index-body {
+    padding-top: 0px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 300px;
+    background: no-repeat top center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.update-item {
+    margin-bottom: 30px;
+}
+
+#logo {
+    background-image: url('../img/logo.png');
+    height: 50px;
+    width: 65px;
+}
+
+#logo:hover {
+    background-image: url('../img/logo-hover.png');
+    height: 50px;
+    width: 65px;
+}
+
+#twitter {
+    background-image: url('../img/logo-twitter-dark.png');
+    height: 32px;
+    width: 32px;
+}
+
+#twitter:hover {
+    background-image: url('../img/logo-twitter-white.png');
+    height: 32px;
+    width: 32px;
+}
+
+#discord {
+    background-image: url('../img/logo-discord-dark.png');
+    height: 32px;
+    width: 32px;
+}
+
+#discord:hover {
+    background-image: url('../img/logo-discord-white.png');
+    height: 32px;
+    width: 32px;
+}
+
+#youtube {
+    background-image: url('../img/logo-youtube-dark.png');
+    height: 32px;
+    width: 32px;
+}
+
+#youtube:hover {
+    background-image: url('../img/logo-youtube-white.png');
+    height: 32px;
+    width: 32px;
+}
+
+#twitch {
+    background-image: url('../img/logo-twitch-dark.png');
+    height: 32px;
+    width: 32px;
+}
+
+#twitch:hover {
+    background-image: url('../img/logo-twitch-white.png');
+    height: 32px;
+    width: 32px;
+}
+
+#discord-white {
+    background-image: url('../img/logo-discord-white.png');
+    height: 32px;
+    width: 32px;
+}
+
+#discord-white:hover {
+    background-image: url('../img/logo-discord-red.png');
+    height: 32px;
+    width: 32px;
+}
+
+#on {
+    color: green
+}
+
+#off {
+    color: red
+}
+
+#link-bar:hover {
+    color: black
+}
+
+#mentions {
+    font-size: 0.9rem
+}

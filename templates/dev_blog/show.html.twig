@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% include 'partials/navBar.html.twig' %}
+    <div class="container">
+
+        <!-- Page Heading -->
+        <h1 class="mt-4 mb-3">Update Template</h1>
+
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="{{ path('homepage') }}">Acceuil</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a href="{{ path('dev_blog') }}">DevBlog</a>
+            </li>
+            <li class="breadcrumb-item active">Update Template</li>
+        </ol>
+
+        <!-- Update Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <img class="img-fluid img-show" src="http://placehold.it/750x900" alt="">
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="my-3">Update Description</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis
+                    enim.
+                </p>
+                <h3 class="my-3">Update Details</h3>
+                <ul>
+                    <li>Lorem Ipsum</li>
+                    <li>Dolor Sit Amet</li>
+                    <li>Consectetur</li>
+                    <li>Adipiscing Elit</li>
+                </ul>
+            </div>
+        </div>
+        <!-- /row -->
+        <hr>
+    </div>
+
+{% endblock %}

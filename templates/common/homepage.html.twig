@@ -1,0 +1,82 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <header>
+        <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+
+                <!-- Slide One -->
+                <div class="carousel-item active" style="background-image: url('img/slide-1.jpg')">
+                </div>
+
+                <!-- Slide Two -->
+                <div class="carousel-item" style="background-image: url('img/slide-2.jpg')">
+                </div>
+
+                <!-- Slide Three -->
+                <div class="carousel-item" style="background-image: url('img/slide-3.jpg')">
+                </div>
+
+                <div class="carousel-item" style="background-image: url('img/slide-4.jpg')">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    {% include 'partials/navBar.html.twig' %}
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Status -->
+        <hr>
+        <div class="row">
+            <div class="col-lg-6">
+                <h1>Black Syndicate
+                    <small>Serveur GTA5-RP</small>
+                </h1>
+                <div class="col-md-6 py-lg-5">
+                    <a class="btn btn-lg btn-secondary btn-block" href="fivem://connect/black-syndicate.info:30120">JOUER MAINTENANT</a>
+                </div>
+                <br>
+                <p>Black Syndicate fonctionne avec FiveM.<br> Beaucoup de fonctionnalités ont été développées exclusivement pour le serveur.<br>
+                    <br><strong>Votre histoire dans le milieu | <a href="html/about.html">En savoir plus...</a></strong></p>
+            </div>
+            <div>
+                <h3 class="col-md-4 py-lg-1">Twitter Feed</h3>
+                <div class="bg-dark">
+                    <a class="twitter-timeline" data-lang="fr" data-width="553" data-height="240" data-theme="transparent" data-link-color="#d3000b" href="https://twitter.com/BS_GTARP?ref_src=twsrc%5Etfw" data-chrome="noheader nofooter noborders noscrollbar transparent">Tweets by Black Syndicate</a>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+            </div>
+            <!--<div class="col-lg-4">
+                <img class="img-fluid rounded" src="img/logo-xl.png" alt="">
+            </div>-->
+        </div>
+        <!-- /row -->
+        <!-- Last Update -->
+        <hr>
+        <h2>Fresh News</h2>
+        <div class="row">
+
+            <!-- Update Template -->
+            <!-- <div class="col-lg-4 col-sm-6 update-item">
+              <div class="card h-100">
+                <a href="html/devblog/updates/page-CHANGEME-update-template.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+                <div class="card-body">
+                  <h4 class="card-title">
+                    <a href="html/devblog/updates/page-CHANGEME-update-template.html">Last News</a>
+                  </h4>
+                  <p class="card-text">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div> -->
+            <!-- Update 2 -->
+        </div>
+    </div>
+{% endblock %}

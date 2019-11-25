@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
-<html>
-    <head>
-        {% include partials/head.html.twig %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
-
-    </body>
+<head>
+    {% include 'partials/head.html.twig' %}
+</head>
+<body class="index-body">
+    {% block body %}{% endblock %}
+    {% include 'partials/footer.html.twig' %}
+    {% block javascripts %}{% endblock %}
+    {% include 'partials/script.html.twig' %}
+</body>
 </html>

@@ -1,0 +1,396 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    {% include 'partials/navBar.html.twig' %}
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <h1 class="mt-4 mb-3">Black Syndicate
+            <small>Informations</small>
+        </h1>
+
+        <!-- Intro Content -->
+        <div class="row">
+            <div class="col-lg-6">
+                <img class="img-fluid rounded mb-4" src="../img/infos.jpg" alt="">
+            </div>
+            <div class="col-lg-6">
+                <h2>Votre histoire dans le milieu</h2>
+                <p>Le Milieu, dit aussi haute-pègre, ou grand banditisme est l'appellation donnée au crime organisé.</p>
+                <p>C'est sur quoi nous avons apporté un soin particulier, vous y trouverez beaucoup d'activité diverses et variées, développées exclusivement pour ce serveur.
+                    <br>Notre objectif était d'avoir des activités illégales proche du réel, ainsi elles ont été organisées sous forme de réseau, réseau qui peut être démantelé par la police.
+                    <br>Il est maintenant nécessaire de s'organiser, d'avoir des contacts et un gang, gang que vous pouvez rejoindre ou créer.
+                </p>
+                <p>Toutes les entreprises ont été travaillées pour apporter plus d'activités et de réalisme, chaque travail/mission demande aux joueurs une action propre à son job afin d'éviter au maximum d'attendre bêtement sur des points.</p>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <div class="mb-4" id="accordion" role="tablist" aria-multiselectable="true">
+            <!-- Question -->
+            <div class="card-faq">
+                <div class="card-header" role="tab" id="headingOne">
+                    <h4 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Informations Supplémentaires</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+                    <div class="card-body">
+                        <ul>
+                            <li>IP :
+                                <strong>black-syndicate.info</strong>
+                            </li>
+                            <li>Slots :
+                                <strong>64</strong>
+                            </li>
+                            <li>Statut :
+                                <strong id="off">Ouverture le 1/11/19</strong>
+                            </li>
+                            <li>Manette :
+                                <strong>Compatible</strong>
+                            </li>
+                            <li>White-list :
+                                <strong id="on">Activée</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card-faq">
+                <div class="card-header" role="tab" id="headingTwo">
+                    <h4 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Règlement du Serveur</a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                    <div class="card-body">
+                        <h3>Lexique</h3>
+                        <ul>
+                            <li><strong>AFK</strong> (Away From keyboard) Loin du clavier.</li>
+                            <li><strong>IRL</strong> (In Real Life) Dans la vie réelle.</li>
+                            <li><strong>RP</strong> (Role Play) Jeu de rôle.</li>
+                            <li><strong>HRP</strong> (Hors Role Play) En dehors du jeu de rôle.</li>
+                            <li><strong>FREEKILL</strong> Mort Gratuite. Le faite de tuer quelqu’un sans aucune raison.</li>
+                            <li><strong>CARKILL</strong> Mort par Crash de voirture. Le faite d’écraser sans aucune raison.</li>
+                            <li><strong>FREEFIGHT</strong> Coup Gratuit. Le faite de tabasser quelqu’un sans aucune raison.</li>
+                            <li><strong>METAGAMING</strong> Jouer Meta. Le faite d'utiliser des informations meta, c'est à dire obtenues de façon HRP (Stream, Discord, Teamspeak, etc…).</li>
+                            <li><strong>NO FEAR DEATH</strong> Pas de peur de la Mort. Le faite de ne pas craindre la mort comme vous pourrez la craindre IRL.</li>
+                            <li><strong>POWERGAMING</strong> Jeu puissant. Le faite de réaliser des actions sensées irréalisables pour le commun des mortels.
+                                <br><small>Exemple: Prendre un saut en voiture à 310km/h sur l'autoroute pour vous échapper de la police.</small>
+                            </li>
+                        </ul>
+                        <hr>
+                        <h3>Règles Générales</h3>
+                        <ul>
+                            <li>Le respect des autres joueurs et joueuses.</li>
+                            <li>L’utilisation de bugs ou de logiciels de triche est strictement interdite.</li>
+                            <li>Le <strong>Freekill</strong>, <strong>Carkill</strong>, <strong>Freefight</strong>, <strong>Métagaming</strong>, <strong>Powergaming</strong> et <strong>No Fear Death</strong> sont interdit.</li>
+                            <li>Il est interdit d’avoir un comportement HRP, par exemple AFK dans les lieux public, faire des animations en dehors de contexte roleplay...etc...</li>
+                            <li>Il est strictement interdit de se déconnecter ou de quitter le jeu dans le but d’éviter une interaction RP.</li>
+                            <li>Si une personne n'a pas un comportement approprié signaler le à un modérateur,
+                                <br>mais il est interdit d'interrompre une scène RP ou d'utiliser les mots <strong>RP</strong>, <strong>HRP</strong>, <strong>AFK</strong>, <strong>IRL</strong> en jeu.</li>
+                            <li>Toutes photos/vidéos prisent doit se faire avec le téléphone ou les jumelles équipées.</li>
+                            <li>L’utilisation d’un modificateur de voix est autorisée, à condition que la voix soit audible et réaliste.</li>
+                            <li>Un masque est obligatoire si le modificateur de voix rend la voix non-réaliste.</li>
+                            <li>Tout RP dont la liberté morale est atteinte (Exemples: terroriste, violeur, pédophile...etc...) est interdit.</li>
+                            <li>Il est interdit de voler un véhicule d’entreprise ou de service public sans raison RP.</li>
+                            <li>Il est interdit de jouer un nouveau personnage qui est a un lien familial avec les anciennes fréquentations ou le personnage précédent.</li>
+                        </ul>
+                        <hr>
+                        <h3>Règles de Communication</h3>
+                        <ul>
+                            <li>Toute communication doit se faire en jeu, qu'elle soit vocale (par téléphone, radio ou dans la rue) ou par écrit (darkweb, sms).</li>
+                            <li>L'utilisation de discord pour le vocal n'est pas autorisé.</li>
+                        </ul>
+                        <hr>
+                        <h3>Règles de Réanimation</h3>
+                        <ul>
+                            <li>Si vous êtes dans le coma vous ne pouvez pas parler.</li>
+                            <li>Le coma n’est pas une mort RP.</li>
+                            <li>Lorsqu’un ambulancier intervient dans une scène RP et que vous nécessitez un soin particulier vous devez absolument respecter leurs décisions et jouer suivant ce qu’il vous dit.</li>
+                            <li>Une personne ayant été mise en coma dans un cadre de fusillade / échange de tir , que ce soit policier ou civil, devront rester aux urgences et vous ne pouvez pas partir par vos propres moyens.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /accordion -->
+
+        <!-- Features -->
+        <hr>
+        <h2>Services publics</h2>
+        <div class="row">
+
+            <!-- Feature -->
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/police.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Police</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">Recrutement: <strong id="on">Ouvert</strong></h6>
+
+                        <p class="card-text">Protéger et servir, mais pas seulement avec l'aide des enquêteurs, la police pourra démanteler les différents réseaux du milieu.<br> Radio, prison, GAV, ordinateur embraqué, ADN, radars, fichiers criminels, zone d'entraînement,
+                            ce n'est qu'un léger éventail des outils en place pour que vous puissiez mener à bien vos objectifs.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-6 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/ems.jpg" alt="">
+                    <div class="card-body">
+                        <h2 class="card-title">Urgences</h2>
+                        <h6 class="card-subtitle mb-2 text-muted">Recrutement: <strong id="on">Ouvert</strong></h6>
+
+                        <p class="card-text">Littéralement le bras droit de la police, les Urgences n'ont pas été laissés en reste, un hôpital complet a été ajouté et ce services a été remanié afin faciliter vos scènes roleplay.<br>Par exemple vous êtes obligé d'emmener les
+                            blessés à l'hôpital sur une civière pour qu'il soit soigner par un médecin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <hr>
+        <h2>Services privés</h2>
+        <div class="row ">
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/bank.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Banque</h3>
+                        <h6 class="card-subtitle mb-2 text-muted"><strong id="off">En Construction</strong></h6>
+
+                        <p class="card-text">Les chiffres ne vous font pas peur ? Et les attaques de gang ? Si vous avez les épaules devenez le nouveau PDG de la Banque, aidez au développement des entreprises, dirigez vos employés et supervisez les opérations de la Brinks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/casino.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Casino</h3>
+                        <h6 class="card-subtitle mb-2 text-muted"><strong id="off">En Construction</strong></h6>
+
+                        <p class="card-text">Vous aimez vivre dans le luxe ? Construisez votre avenir dans le Casino mais fait attention à l'interet des gang pour le blanchiment d'argent, à vous de voir si vous voulez coopérer avec la police ou les gangs de Los Santos, le
+                            choix vous appartiens.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/night.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Night-Club</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Recrutement: <strong id="on">Ouvert</strong></h6>
+
+                        <p class="card-text">Vous êtes du monde de la nuit ? Le Night-Club est fait pour vous, sélectionnez les meilleurs clients, conduisez les VIP en limousine, associez-vous ou faites fasse aux dealers qui veulent vendre de la drogue dans votre Club.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/mechanic.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Mécanique</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Recrutement: <strong id="on">Ouvert</strong></h6>
+
+                        <p class="card-text">Comme tout le reste ce service a été retravaillé et modifié, vous avez plus de possibilités dans la gestion et les scènes roleplay, par exemple vous ne pouvez plus réparer complètement un véhicule en dehors du garage.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/taxi.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Taxi</h3>
+                        <h6 class="card-subtitle mb-2 text-muted"><strong id="off">En Construction</strong></h6>
+
+                        <p class="card-text ">Vous adorez conduire et entretenir votre véhicule ? Vous connaissez toutes les rues de los Santos comme votre poche ? On vous appelle la fusée de Los Santos ? Alors n'hésitez plus et rejoignez l'entreprise.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/cook.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Restauration</h3>
+                        <h6 class="card-subtitle mb-2 text-muted">Recrutement: <strong id="on">Ouvert</strong></h6>
+
+                        <p class="card-text ">Dirigez la plus grosse entreprise de Los Santos, manager vos employés, gérez les stocks et occupez vous des commandes de tout Los Santos. le Burger est la spécialité du serveur! (Et il apporte beaucoup de bonus)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <hr>
+        <h2>Activités Illégales</h2>
+        <div class="row">
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/hooker.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Proxénétisme</h4>
+
+                        <p class="card-text ">Mais pourquoi ? Parce que GTA... Vous devrez trouver le quartier, choisir les clients pour augmenter vos gains et défendre vos dames des gangs locaux ou des clients trop agressifs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/run.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Course de rue</h4>
+
+                        <p class="card-text">Vous voulez profiter de votre voiture? Organisez des courses de rue avec vos rivaux et dominez les rues de Los Santos. Faites attention à la police et aux radars!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/carthief.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Vol de voiture</h4>
+
+                        <p class="card-text">Vous n'avez pas peur des risques et vous êtes bon pilote? Le vol de voiture est fait pour vous, trouvez le contact pour savoir quelle voiture est recherchée!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/drugs.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Vente de drogues</h4>
+
+                        <p class="card-text">Prennez le contrôle d'un labo clandestin, doublez ou faites affaire avec le cartel, montez et organisez votre réseau, recrutez des dealers et devenez le baron de la drogue de Los Santos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/weapon.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Armes illégales</h4>
+
+                        <p class="card-text">L'accès aux armes est réaliste, les armes semi-automatique sont légales, le reste est classé arme de guerre. Si vous voulez vous équiper va falloir traiter avec les Lost.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/holdup.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Braquages/Extorsion</h4>
+
+                        <p class="card-text">Le braquage de commerce et de banque est présente, mais nous avons prévue de retravailler complètement cette fonctionnalité, restez attentifs aux mises à jour.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/burglary.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Cambriolage</h4>
+
+                        <p class="card-text">Si vous préférez les opérations discrètes en groupe restreint voir seul, le cambriolage est le meilleur choix pour vous.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/bumfight.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Combat de rue</h4>
+
+                        <p class="card-text">Vous avez l'âme d'un boxeur? Préparez vous au combat, devenez célèbre pour qu'on pari sur vous et gagner un max d'argent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+
+        <hr>
+        <h2>Activités</h2>
+        <div class="row">
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/golf.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Golf</h4>
+
+                        <p class="card-text ">Vous désirez vous détendre après le travail ou tout simplement entraîner votre swing. Le green de Los Santos est disponible pour vous et vos amis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/hunt.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Châsse</h4>
+
+                        <p class="card-text">La faune de Los Santos n'a plus de secret pour vous? Alors assurez-vous d'avoir votre couteau et votre fusil, prenez un quad et partez châsser pour revendre votre gibier.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/fishing.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Pêche</h4>
+
+                        <p class="card-text">Si vous avez plutôt le pied marin, la pêche est là pour vous. Achetez un bateau ou louez et la mer est à vous. Attention, tout n'est pas légale à pêcher même si ça peut rapporter gros.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature -->
+            <div class="col-lg-3 mb-4">
+                <div class="card h-100 text-center">
+                    <img class="card-img-top" src="../img/custom.jpg" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Personnalisation</h4>
+
+                        <p class="card-text">Tatouage, accessoires de personnage et d'armes, modification du véhicule, appartements et bien plus encore, vous pouvez tout personnaliser sur Black Syndicate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /row -->
+
+    </div>
+{% endblock %}

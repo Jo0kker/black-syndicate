@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Repository\PostDevRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -9,10 +10,13 @@ class IndexController extends AbstractController
 {
     /**
      * @Route("/", name="homepage")
+     * @param PostDevRepository $repo
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function index()
     {
-        return $this->render('common/homepage.html.twig');
+
+        return $this->render('common/homepage.html.twig',);
     }
 
     /**

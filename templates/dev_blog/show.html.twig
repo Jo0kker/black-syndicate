@@ -5,7 +5,7 @@
     <div class="container">
 
         <!-- Page Heading -->
-        <h1 class="mt-4 mb-3">Update Template</h1>
+        <h1 class="mt-4 mb-3">Détail de mise à jour{% if is_granted('ROLE_ADMIN') %}<a href="{{ path('del_blog', {'slug': post.slug}) }}" class="float-right"><button class="btn btn-danger">Supprimer</button></a>{% endif %}</h1>
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -14,28 +14,21 @@
             <li class="breadcrumb-item">
                 <a href="{{ path('dev_blog') }}">DevBlog</a>
             </li>
-            <li class="breadcrumb-item active">Update Template</li>
+            <li class="breadcrumb-item active">{{ post.slug }}</li>
         </ol>
 
         <!-- Update Row -->
         <div class="row">
 
-            <div class="col-md-8">
-                <img class="img-fluid img-show" src="http://placehold.it/750x900" alt="">
+            <div class="col-md-6">
+                <img class="img-fluid" src="{{ post.img }}" alt="">
             </div>
 
-            <div class="col-md-4">
-                <h3 class="my-3">Update Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis
-                    enim.
-                </p>
+            <div class="col-md-6">
+                <h3 class="my-3">{{ post.title }}</h3>
+                <p>{{ post.description }}</p>
                 <h3 class="my-3">Update Details</h3>
-                <ul>
-                    <li>Lorem Ipsum</li>
-                    <li>Dolor Sit Amet</li>
-                    <li>Consectetur</li>
-                    <li>Adipiscing Elit</li>
-                </ul>
+                <p>{{ post.detail|raw }}</p>
             </div>
         </div>
         <!-- /row -->
@@ -43,3 +36,4 @@
     </div>
 
 {% endblock %}
+

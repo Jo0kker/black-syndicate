@@ -5,8 +5,8 @@
     {% include 'partials/navBar.html.twig' %}
     <div class="container">
         <!-- Page Heading -->
-        <h1 class="mt-4 mb-3">DevBlog
-        </h1>
+        <h1 class="mt-4 mb-3">DevBlog{% if is_granted('ROLE_ADMIN') %}<a href="{{ path('add_blog') }}" class="float-right"><button class="btn btn-info">Ajout article</button></a>{% endif %}</h1>
+
 
         <ol class="breadcrumb">
             <li class="breadcrumb-item">
@@ -18,20 +18,20 @@
         </ol>
 
         <div class="row">
-
+            {% for post in devblog %}
             <!-- Update Template -->
             <div class="col-lg-4 col-sm-6 update-item">
-              <div class="card h-100">
-                <a href="{{ path('show_blog') }}"><img class="card-img-top img-index" src="http://placehold.it/700x400" alt=""></a>
+              <div class="card h-100 postDev">
+                <a href="{{ path('show_blog', {'slug': post.slug}) }}"><img class="card-img-top img-index" src="{{ post.img }}" alt=""></a>
                 <div class="card-body">
                   <h4 class="card-title">
-                    <a href="{{ path('show_blog') }}">Update Name</a>
+                    <a href="{{ path('show_blog', {'slug': post.slug}) }}">{{ post.title }}</a>
                   </h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet</p>
+                  <p class="card-text">{{ post.description }}</p>
                 </div>
               </div>
             </div>
-
+            {% endfor %}
         </div>
         <!-- /row -->
     </div>

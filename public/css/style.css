@@ -116,10 +116,14 @@ body {
     height: 250px;
 }
 
-
-
 .card {
+    border-radius: 10px;
+}
+
+.postDev:hover {
     border: 1px solid darkred;
+    background-color: darkred;
+    color: black;
 }
 .card-login {
     margin-top: 130px;
@@ -197,4 +201,13 @@ input:focus{
     background-color: #e9ecef;
     border: 1px solid #ced4da;
     border-radius: 0;
+}
+
+.flex-row-reverse ul li a {
+    font-variant: all-small-caps!important;
+    font-family: bebas_kairegular!important;
+}
+
+.card-title a:hover {
+    color: black;
 }

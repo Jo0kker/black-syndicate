@@ -9,26 +9,26 @@
                 <span class="logo_title mt-5"> Administration Site </span>
             </div>
             <div class="card-body">
-                <form action="{{ path('login') }}" method="post" id="login-form" name="login-form">
+                <form action="{{ path('login') }}" method="post">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>
                         </div>
-                        <input type="text" name="_pseudo" id="login-form-pseudo" class="form-control" placeholder="Username">
+                        <input type="text" name="_username" id="inputEmail" class="form-control" required autofocus>
                     </div>
 
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-key"></i></span>
                         </div>
-                        <input type="password" name="_password" class="form-control" id="login-form-password" placeholder="Password">
+                        <input type="password" name="_password" id="inputPassword" class="form-control" required>
                     </div>
                     <div class="form-group">
-                        <a href=""><button class="btn btn-outline-warning mr-2">Mot de passe perdu ?</button></a>
-                        <input type="submit" name="login-form-submit" id="login-form-submit" value="Connexion" class="ml-2 btn btn-outline-danger login_btn">
+                        <a href="" class="btn btn-outline-warning mr-2">Mot de passe perdu ?</a>
+                        <button type="submit" name="login-form-submit" id="login-form-submit" class="ml-2 btn btn-outline-danger login_btn">Connexion</button>
                     </div>
                     <div class="form-group">
-                        <a href=""><button class="btn btn-outline-light">Demande de compte</button></a>
+                        <a class="btn btn-outline-light" href="{{ path('register') }}">Demande de compte</a>
                     </div>
                 </form>
             </div>

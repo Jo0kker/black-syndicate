@@ -13,10 +13,12 @@ class IndexController extends AbstractController
      * @param PostDevRepository $repo
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function index()
+    public function index(PostDevRepository $repo)
     {
-
-        return $this->render('common/homepage.html.twig',);
+        $freshNews = $repo->findFresh();
+        return $this->render('common/homepage.html.twig', [
+            'news' => $freshNews
+        ]);
     }
 
     /**

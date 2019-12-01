@@ -24,8 +24,16 @@ class PostDevRepository extends ServiceEntityRepository
         return $this->createQueryBuilder('p')
             ->orderBy('p.id', 'DESC')
             ->getQuery()
-            ->getResult()
-            ;
+            ->getResult();
+    }
+
+    public function findFresh()
+    {
+        return $this->createQueryBuilder('f')
+            ->orderBy('f.id', 'DESC')
+            ->setMaxResults(3)
+            ->getQuery()
+            ->getResult();
     }
 
     // /**

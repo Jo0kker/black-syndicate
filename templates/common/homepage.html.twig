@@ -63,20 +63,19 @@
         <hr>
         <h2>Fresh News</h2>
         <div class="row">
-
-            <!-- Update Template -->
-            <!-- <div class="col-lg-4 col-sm-6 update-item">
-              <div class="card h-100">
-                <a href="html/devblog/updates/page-CHANGEME-update-template.html"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                <div class="card-body">
-                  <h4 class="card-title">
-                    <a href="html/devblog/updates/page-CHANGEME-update-template.html">Last News</a>
-                  </h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet</p>
+            {% for post in news %}
+                <!-- Update Template -->
+                <div class="col-lg-4 col-sm-6 update-item">
+                    <div class="card h-100 postDev">
+                        <a href="{{ path('show_blog', {'slug': post.slug}) }}"><img class="card-img-top img-index" src="{{ post.img }}" alt=""></a>
+                        <div class="card-body">
+                            <h4 class="card-title">
+                                <a href="{{ path('show_blog', {'slug': post.slug}) }}">{{ post.title }}</a>
+                            </h4>
+                            <p class="card-text">{{ post.description }}</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div> -->
-            <!-- Update 2 -->
+            {% endfor %}
         </div>
-    </div>
 {% endblock %}

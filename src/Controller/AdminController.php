@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegisterType;
-use Doctrine\Common\Persistence\ObjectManager;
 use Doctrine\ORM\EntityManagerInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -43,9 +42,10 @@ class AdminController extends AbstractController
 
     /**
      * @Route("/register", name="register")
+     * @IsGranted("IS_AUTHENTICATED_ANONYMOUSLY")
      * @param Request $request
-     * @param ObjectManager $manager
      * @param UserPasswordEncoderInterface $encoder
+     * @param EntityManagerInterface $manager
      * @return Response
      */
     public function register(Request $request, UserPasswordEncoderInterface $encoder, EntityManagerInterface $manager)

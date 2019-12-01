@@ -6,6 +6,7 @@ use App\Entity\PostDev;
 use App\Form\DevblogType;
 use App\Repository\PostDevRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -29,6 +30,7 @@ class DevBlogController extends AbstractController
 
     /**
      * @Route("/devblog/add", name="add_blog")
+     * @IsGranted("ROLE_ADMIN")
      * @param EntityManagerInterface $manager
      * @param Request $request
      * @return Response
@@ -66,6 +68,7 @@ class DevBlogController extends AbstractController
 
     /**
      * @Route("/devblog/{slug}/del", name="del_blog")
+     * @IsGranted("ROLE_ADMIN")
      * @param PostDev $post
      * @param EntityManagerInterface $manager
      * @return RedirectResponse

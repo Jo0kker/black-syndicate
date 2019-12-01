@@ -37,6 +37,10 @@ class PostDev
 
     /**
      * @ORM\Column(type="text")
+     * @Assert\Length(
+     *     max="100",
+     *     maxMessage="Le lien est trop long, tente de le réduit ou contacte l'admin"
+     * )
      */
     private $img;
 
